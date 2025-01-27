@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --swiper-theme-color: #3b82f6;
+  --swiper-navigation-size: 24px;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-inactive-color: #cbd5e1;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+}
+
+.dark {
+  @apply bg-primary text-white-100;
+}
+
+.light {
+  @apply bg-white-100 text-primary;
+}
+
+.nav-link {
+  @apply hover:text-blue-500 transition-colors duration-300;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.card {
+  @apply bg-white dark:bg-tertiary rounded-xl shadow-lg p-6 transition-transform duration-300 hover:scale-105;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.progress-bar {
+  @apply h-2 bg-gray-200 rounded-full overflow-hidden;
+}
+
+.progress-bar-fill {
+  @apply h-full bg-blue-600 transition-all duration-500;
+}
+
+.swiper {
+  @apply w-full overflow-visible;
+}
+
+.swiper-slide {
+  @apply h-auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply bg-white dark:bg-tertiary rounded-full w-10 h-10 shadow-lg;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  @apply text-sm font-bold;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-blue-500;
+}
+
+.swiper-pagination {
+  @apply !bottom-0;
+}
+
+.testimonial-slider {
+  @apply pb-12;
+}
