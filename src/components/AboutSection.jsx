@@ -11,11 +11,12 @@ function AboutSection() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="relative">
-            <img
-              src="src/assets/profile.jpg"
-              alt="Profile"
-              className="rounded-lg shadow-lg"
-            />
+          <img
+          src="src/assets/profile.jpg"
+          alt="Profile"
+          className="w-60 h-60 rounded-lg shadow-lg object-cover ml-20"
+          />
+
           </div>
           
           <div>

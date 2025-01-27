@@ -6,7 +6,7 @@ function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()}Abel Theodor. All rights reserved.</p>
           </div>
           <div className="flex space-x-6">
             <a
@@ -26,7 +26,7 @@ function Footer() {
               <FaLinkedin size={24} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/AbelaAbel81301?t=IEAdhSKwH4fLyu8Si-guZA&s=35"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-500 transition-colors"
